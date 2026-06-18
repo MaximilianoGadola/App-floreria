@@ -8,9 +8,9 @@ const CartWidget = () => {
     const totalQuantity = getTotalQuantity()
 
     return (
-        <div className='cart-widget'>
-            <Link to="/cart">
-                <span className="cart-icon">🛒</span>
+        <div className="cart-widget">
+            <Link to="/cart" aria-label="Ver carrito">
+                <span className="cart-icon" aria-hidden="true">&#128722;</span>
                 {totalQuantity > 0 && <span className="cart-quantity">{totalQuantity}</span>}
             </Link>
         </div>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+  --color-ink: #27211d;
+  --color-muted: #74695f;
+  --color-page: #fbf6ef;
+  --color-cream: #fffaf4;
+  --color-surface: #ffffff;
+  --color-blush: #f9e7e8;
+  --color-blush-strong: #d95876;
+  --color-rose: #b92f5b;
+  --color-rose-dark: #7f2340;
+  --color-leaf: #426b55;
+  --color-leaf-soft: #e5eee7;
+  --color-gold: #c89546;
+  --color-border: #eadbd0;
+  --shadow-sm: 0 10px 24px rgba(70, 50, 42, 0.08);
+  --shadow-md: 0 18px 46px rgba(70, 50, 42, 0.13);
+  --shadow-lg: 0 28px 72px rgba(70, 50, 42, 0.18);
+  --radius: 8px;
+  --page-width: 1180px;
+
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-ink);
+  background: var(--color-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--color-page);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-ink);
+  background:
+    linear-gradient(135deg, rgba(185, 47, 91, 0.13), transparent 34rem),
+    linear-gradient(225deg, rgba(66, 107, 85, 0.12), transparent 30rem),
+    linear-gradient(180deg, #fffdf8 0%, var(--color-page) 45%, #f4ece4 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.06;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(217, 88, 118, 0.24);
+}
+
+:focus-visible {
+  outline: 3px solid rgba(66, 107, 85, 0.34);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  body {
+    background:
+      linear-gradient(145deg, rgba(185, 47, 91, 0.12), transparent 22rem),
+      linear-gradient(180deg, #fffdf8 0%, var(--color-page) 48%, #f4ece4 100%);
+  }
+}
+

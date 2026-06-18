@@ -1,0 +1,121 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(234, 219, 210, 0.88);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.item-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(200, 63, 104, 0.26);
+  box-shadow: var(--shadow-lg);
+}
+
+.item-card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-card-image::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 42%;
+  background: linear-gradient(180deg, transparent, rgba(39, 33, 29, 0.28));
+  pointer-events: none;
+}
+
+.item-card-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  background: var(--color-leaf-soft);
+  transition: transform 260ms ease;
+}
+
+.item-card:hover .item-card-image img {
+  transform: scale(1.035);
+}
+
+.item-card-image span {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-rose-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 7px 10px;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+}
+
+.item-card-body {
+  display: grid;
+  gap: 8px;
+  padding: 18px 18px 16px;
+}
+
+.item-card h3 {
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.08rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.item-card p {
+  color: var(--color-rose-dark);
+  font-size: 1.14rem;
+  font-weight: 800;
+}
+
+.item-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 36px);
+  margin: auto 18px 18px;
+  min-height: 46px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  background: var(--color-rose);
+  color: var(--color-surface);
+  font-weight: 700;
+  text-align: center;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.item-card a:hover {
+  background: var(--color-rose-dark);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 620px) {
+  .item-card-body {
+    padding: 14px 14px 13px;
+  }
+
+  .item-card a {
+    width: calc(100% - 28px);
+    margin: auto 14px 14px;
+    min-height: 44px;
+    padding-inline: 12px;
+    font-size: 0.94rem;
+  }
+
+  .item-card-image span {
+    left: 10px;
+    bottom: 10px;
+    font-size: 0.68rem;
+  }
+}
+

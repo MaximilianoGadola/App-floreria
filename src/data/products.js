@@ -1,8 +1,42 @@
 export const products = [
-     { id: "1", title: "Ramo de rosas rojas", price: 4500, pictureUrl: "https://picsum.photos/200", category: "ramos", description: "Hermoso ramo de 12 rosas rojas frescas, ideal para regalar.", stock: 10 },
-    { id: "2", title: "Planta de interior", price: 1800, pictureUrl: "https://picsum.photos/201", category: "plantas", description: "Planta de interior fácil de cuidar, perfecta para el hogar.", stock: 5 },
-    { id: "3", title: "Ramo de girasoles", price: 3200, pictureUrl: "https://picsum.photos/202", category: "ramos", description: "Ramo de girasoles frescos que iluminan cualquier espacio.", stock: 8 },
-    { id: "4", title: "Orquídea blanca", price: 5500, pictureUrl: "https://picsum.photos/203", category: "ocasiones", description: "Elegante orquídea blanca, ideal para ocasiones especiales.", stock: 3 },
-    { id: "5", title: "Claveles rosados", price: 2800, pictureUrl: "https://picsum.photos/204", category: "ramos", description: "Ramo de claveles rosados frescos y perfumados.", stock: 0 },
-    { id: "6", title: "Planta cactus", price: 1200, pictureUrl: "https://picsum.photos/205", category: "plantas", description: "Cactus decorativo de bajo mantenimiento.", stock: 15 },
+  {
+    "id": 1,
+    "title": "Ramo de rosas rojas premium",
+    "price": 3200,
+    "stock": 8,
+    "category": "aniversario",
+    "pictureUrl": "https://picsum.photos/id/101/600/600"
+  },
+  {
+    "id": 2,
+    "title": "Ramo de girasoles clásicos",
+    "price": 1800,
+    "stock": 12,
+    "category": "cumpleaños",
+    "pictureUrl": "https://picsum.photos/id/102/600/600"
+  },
+  {
+    "id": 3,
+    "title": "Ramo de lilium blancos",
+    "price": 5200,
+    "stock": 5,
+    "category": "bodas",
+    "pictureUrl": "https://picsum.photos/id/103/600/600"
+  },
+  {
+    "id": 4,
+    "title": "Ramo de margaritas frescas",
+    "price": 2100,
+    "stock": 15,
+    "category": "primavera",
+    "pictureUrl": "https://picsum.photos/id/104/600/600"
+  },
+  {
+    "id": 5,
+    "title": "Ramo de lisianthus rosados",
+    "price": 3800,
+    "stock": 6,
+    "category": "aniversario",
+    "pictureUrl": "https://picsum.photos/id/105/600/600"
+  }
 ]
